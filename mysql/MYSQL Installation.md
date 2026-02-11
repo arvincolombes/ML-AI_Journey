@@ -51,8 +51,11 @@ MySQL is a database engine that provides fast, secure and scalable solutions for
 
                   
               select all default changes and click next 
+              
   ![image alt](https://github.com/arvincolombes/ML-AI/blob/55b0e306ee1b05b56c5d3ac44145203654b29ebf/mysql/support/myslq11.PNG)
+  
                   set mysql root passpwrd
+                  
  ![image alt](https://github.com/arvincolombes/ML-AI/blob/55b0e306ee1b05b56c5d3ac44145203654b29ebf/mysql/support/myslq9.PNG)
                   MYSQL configration has been completed
 
