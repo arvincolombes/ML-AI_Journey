@@ -11,3 +11,13 @@ MySQL is a database engine that provides fast, secure and scalable solutions for
   Now, Simple click on Downlink to download the your preffered instller .(https://dev.mysql.com/downloads/mysql/)
 
   ![image alt](https://github.com/arvincolombes/ML-AI/blob/fd623d940ebd42b0808db6c26f0bf3d000eac3bd/mysql/support/myslq1.PNG)
+
+  - click mysql MSI installl to installtion
+
+
+    MYSQL 9.6 version required the visual studio 2019 x64 redistributable
+
+    ## step 2: install the visual studio 2019 x64 redistributable
+
+
+    
