@@ -14,6 +14,7 @@ MySQL is a database engine that provides fast, secure and scalable solutions for
 
   - click mysql MSI installl to installtion
 
+![image alt](https://github.com/arvincolombes/ML-AI/blob/66648c86bd81ca7edfddbf80566b36b12cda01b4/mysql/support/myslq2.PNG)
 
     MYSQL 9.6 version required the visual studio 2019 x64 redistributable
 
