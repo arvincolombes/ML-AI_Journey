@@ -12,15 +12,17 @@ MySQL is a database engine that provides fast, secure and scalable solutions for
 
   ![image alt](https://github.com/arvincolombes/ML-AI/blob/fd623d940ebd42b0808db6c26f0bf3d000eac3bd/mysql/support/myslq1.PNG)
 
-  - click mysql MSI installl to installtion
+   •	Click MySQL MSI install to installation
 
 ![image alt](https://github.com/arvincolombes/ML-AI/blob/66648c86bd81ca7edfddbf80566b36b12cda01b4/mysql/support/myslq2.PNG)
 
-    MYSQL 9.6 version required the visual studio 2019 x64 redistributable
 
-    ## step 2: install the visual studio 2019 x64 redistributable
+   MYSQL 9.6 version required the visual studio 2019 x64 redistributable
+    
+          ##step 2: install the visual studio 2019 x64 redistributable
+    
 
-  Simple click Download link to chose the latest vestion (https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
+  - [ ] Simple click Download link to chose the latest vestion (https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 
   ![image alt](https://github.com/arvincolombes/ML-AI/blob/cc13f8d79ec2e21fd5613f0db862fdc9592287fe/mysql/support/myslq3.PNG)
 
