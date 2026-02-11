@@ -20,5 +20,5 @@ MySQL is a database engine that provides fast, secure and scalable solutions for
 
     ## step 2: install the visual studio 2019 x64 redistributable
 
-
+  Simple click Download link chose the latest vestion (https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
     
