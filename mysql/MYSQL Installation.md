@@ -9,3 +9,5 @@ MySQL is a database engine that provides fast, secure and scalable solutions for
   ## Step 1: Visit the Official MySQL Website
   Open your preferred web browser and navigate to the official MySQL website.
   Now, Simple click on Downlink to download the your preffered instller .(https://dev.mysql.com/downloads/mysql/)
+
+  ![image alt](https://github.com/arvincolombes/ML-AI/blob/fd623d940ebd42b0808db6c26f0bf3d000eac3bd/mysql/support/myslq1.PNG)
