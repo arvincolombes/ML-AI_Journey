@@ -117,3 +117,164 @@ mysql> select * from EMPLOYEE;
 |     3 | Ava   | Sales      |
 +-------+-------+------------+
 3 rows in set (0.005 sec)
+
+===============================================================
+1. create Amazon Reviews Table, 
+a. Create table with no constraints i.e., primary key,
+b. create with constraints
+2. Insert the data in that table
+3. update the couple of records
+4. delete couple of records
+5. Try to fetch all the records
+6. Add constraints to your pull query and run it
+=====================================================
+################################1,a. Create table with no constraints i.e., primary key,################################################################
+
+mysql> CREATE TABLE IPHONE16_REVIEW( userid INTEGER, name TEXT, review TEXT  );
+Query OK, 0 rows affected (1.832 sec)
+
+mysql> show tables;
++-----------------+
+| Tables_in_ml    |
++-----------------+
+| employee        |
+| iphone16_review |
++-----------------+
+2 rows in set (0.556 sec)
+mysql> DESC iphone16_review;
++--------+------+------+-----+---------+-------+
+| Field  | Type | Null | Key | Default | Extra |
++--------+------+------+-----+---------+-------+
+| userid | int  | YES  |     | NULL    |       |
+| name   | text | YES  |     | NULL    |       |
+| review | text | YES  |     | NULL    |       |
++--------+------+------+-----+---------+-------+
+3 rows in set (0.392 sec)
+
+##########################################1 b. create with constraints ########################################################################
+mysql> CREATE TABLE AMAZON_IPHONE16_REVIEW( Userid INTEGER PRIMARY KEY, Name TEXT NOT NULL , Review TEXT NOT NULL  );
+Query OK, 0 rows affected (0.911 sec)
+mysql> SHOW TABLES;
++------------------------+
+| Tables_in_ml           |
++------------------------+
+| amazon_iphone16_review |
+| employee               |
+| iphone16_review        |
++------------------------+
+3 rows in set (0.265 sec)
+
+mysql> DESC amazon_iphone16_review;
++--------+------+------+-----+---------+-------+
+| Field  | Type | Null | Key | Default | Extra |
++--------+------+------+-----+---------+-------+
+| Userid | int  | NO   | PRI | NULL    |       |
+| Name   | text | NO   |     | NULL    |       |
+| Review | text | NO   |     | NULL    |       |
++--------+------+------+-----+---------+-------+
+3 rows in set (0.031 sec)
+
+##########################################2. Insert the data in that table###############################################################
+
+mysql> INSERT INTO amazon_iphone16_review VALUES (0001,'Rantnadeep','shifting from android IOS is an amazing level of experience');
+Query OK, 1 row affected (0.484 sec)
+
+mysql> INSERT INTO amazon_iphone16_review VALUES (0002,'sambashiva','Excellent Camera, Smoth performance & Clear Voice Quality');
+Query OK, 1 row affected (0.381 sec)
+
+mysql> INSERT INTO amazon_iphone16_review VALUES (0003,'Poojasutar',' Good one overall nice experience with amazon');
+Query OK, 1 row affected (0.241 sec)
+
+mysql> INSERT INTO amazon_iphone16_review VALUES (0004,'Aabid khaliq','Awesome quality loved it');
+Query OK, 1 row affected (0.308 sec)
+
+mysql> select * from amazon_iphone16_review;
++--------+--------------+-------------------------------------------------------------+
+| Userid | Name         | Review                                                      |
++--------+--------------+-------------------------------------------------------------+
+|      1 | Rantnadeep   | shifting from android IOS is an amazing level of experience |
+|      2 | sambashiva   | Excellent Camera, Smoth performance & Clear Voice Quality   |
+|      3 | Poojasutar   |  Good one overall nice experience with amazon               |
+|      4 | Aabid khaliq | Awesome quality loved it                                    |
++--------+--------------+-------------------------------------------------------------+
+
+#########################################3.update the couple of records##################################
+mysql> select * from amazon_iphone16_review;
++--------+--------------+-------------------------------------------------------------+
+| Userid | Name         | Review                                                      |
++--------+--------------+-------------------------------------------------------------+
+|      1 | Rantnadeep   | shifting from android IOS is an amazing level of experience |
+|      2 | sambashiva   | Excellent Camera, Smoth performance & Clear Voice Quality   |
+|      3 | Poojasutar   |  Good one overall nice experience with amazon               |
+|      4 | Aabid khaliq | Awesome quality loved it                                    |
++--------+--------------+-------------------------------------------------------------+
+4 rows in set (0.005 sec)
+
+mysql> UPDATE amazon_iphone16_review SET name='Arvin' WHERE name='Rantnadeep';
+Query OK, 1 row affected (0.393 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from amazon_iphone16_review;
++--------+--------------+-------------------------------------------------------------+
+| Userid | Name         | Review                                                      |
++--------+--------------+-------------------------------------------------------------+
+|      1 | Arvin        | shifting from android IOS is an amazing level of experience |
+|      2 | sambashiva   | Excellent Camera, Smoth performance & Clear Voice Quality   |
+|      3 | Poojasutar   |  Good one overall nice experience with amazon               |
+|      4 | Aabid khaliq | Awesome quality loved it                                    |
++--------+--------------+-------------------------------------------------------------+
+4 rows in set (0.005 sec)
+
+mysql> UPDATE amazon_iphone16_review SET Review='Bad quality hated it' WHERE Review='Awesome quality loved it';
+Query OK, 1 row affected (0.351 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from amazon_iphone16_review;
++--------+--------------+-------------------------------------------------------------+
+| Userid | Name         | Review                                                      |
++--------+--------------+-------------------------------------------------------------+
+|      1 | Arvin        | shifting from android IOS is an amazing level of experience |
+|      2 | sambashiva   | Excellent Camera, Smoth performance & Clear Voice Quality   |
+|      3 | Poojasutar   |  Good one overall nice experience with amazon               |
+|      4 | Aabid khaliq | Bad quality hated it                                        |
++--------+--------------+-------------------------------------------------------------+
+4 rows in set (0.005 sec)
+########################################4.delete couple of records #######################################
+mysql> delete from amazon_iphone16_review where Name='Poojasutar';
+Query OK, 1 row affected (0.401 sec)
+mysql> select * from amazon_iphone16_review;
++--------+--------------+-------------------------------------------------------------+
+| Userid | Name         | Review                                                      |
++--------+--------------+-------------------------------------------------------------+
+|      1 | Rantnadeep   | shifting from android IOS is an amazing level of experience |
+|      2 | sambashiva   | Excellent Camera, Smoth performance & Clear Voice Quality   |
+|      4 | Aabid khaliq | Awesome quality loved it                                    |
++--------+--------------+-------------------------------------------------------------+
+3 rows in set (0.011 sec)
+
+mysql> delete from amazon_iphone16_review where Name='sambashiva'
+    -> ;
+Query OK, 1 row affected (0.293 sec)
+
+mysql> select * from amazon_iphone16_review;
++--------+--------------+-------------------------------------------------------------+
+| Userid | Name         | Review                                                      |
++--------+--------------+-------------------------------------------------------------+
+|      1 | Rantnadeep   | shifting from android IOS is an amazing level of experience |
+|      4 | Aabid khaliq | Awesome quality loved it                                    |
++--------+--------------+-------------------------------------------------------------+
+2 rows in set (0.004 sec)
+#########################################5. Try to fetch all the records#######################################
+mysql> select * from amazon_iphone16_review;
++--------+--------------+-------------------------------------------------------------+
+| Userid | Name         | Review                                                      |
++--------+--------------+-------------------------------------------------------------+
+|      1 | Arvin        | shifting from android IOS is an amazing level of experience |
+|      2 | sambashiva   | Excellent Camera, Smoth performance & Clear Voice Quality   |
+|      3 | Poojasutar   |  Good one overall nice experience with amazon               |
+|      4 | Aabid khaliq | Bad quality hated it                                        |
++--------+--------------+-------------------------------------------------------------+
+4 rows in set (0.005 sec)
+###########################################6. Add constraints to your pull query and run it#######################
+
+
