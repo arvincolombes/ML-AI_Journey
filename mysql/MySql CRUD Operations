@@ -1,5 +1,5 @@
-##  Create the database ##
-==========================
+############################################################  CREATE THE DATABASE ##########################################
+
 
 mysql> create database ML;
 Query OK, 1 row affected (0.401 sec)
@@ -30,8 +30,8 @@ mysql> SELECT DATABASE();
 +------------+
 1 row in set (0.005 sec)
 
-## Create the table ##
-================================
+#####################################################3 CREATE TABLE AND INSET DATA INTO TO A DATABASE TABLE #################
+
 CREATE TABLE EMPLOYEE(
  empid INTEGER PRIMARY KEY,
  name TEXT NOT NULL,
@@ -68,5 +68,50 @@ mysql> select empid from EMPLOYEE;
 |     3 |
 +-------+
 3 rows in set (0.007 sec)
+############################################MODIFIES EXISTING RECORDS IN A DATABASE TABLE####################################
+mysql> select * from EMPLOYEE;
++-------+-------+------------+
+| empid | name  | dept       |
++-------+-------+------------+
+|     1 | Clark | Sales      |
+|     2 | Deve  | Accounting |
+|     3 | Ava   | Sales      |
+|     4 | Arvin | HR         |
++-------+-------+------------+
+mysql> UPDATE EMPLOYEE SET name='manoj' WHERE name='Arvin';
+Query OK, 1 row affected (0.334 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
 
+mysql> select * from EMPLOYEE;
++-------+-------+------------+
+| empid | name  | dept       |
++-------+-------+------------+
+|     1 | Clark | Sales      |
+|     2 | Deve  | Accounting |
+|     3 | Ava   | Sales      |
+|     4 | manoj | HR         |
++-------+-------+------------+
+########################################################REMOVES RECORDS (ROWS) FROM A DATABASE TABLE########################
+mysql> select * from EMPLOYEE;
++-------+-------+------------+
+| empid | name  | dept       |
++-------+-------+------------+
+|     1 | Clark | Sales      |
+|     2 | Deve  | Accounting |
+|     3 | Ava   | Sales      |
+|     4 | manoj | HR         |
++-------+-------+------------+
+4 rows in set (0.006 sec)
 
+mysql> delete from EMPLOYEE where name='manoj';
+Query OK, 1 row affected (0.434 sec)
+
+mysql> select * from EMPLOYEE;
++-------+-------+------------+
+| empid | name  | dept       |
++-------+-------+------------+
+|     1 | Clark | Sales      |
+|     2 | Deve  | Accounting |
+|     3 | Ava   | Sales      |
++-------+-------+------------+
+3 rows in set (0.005 sec)
