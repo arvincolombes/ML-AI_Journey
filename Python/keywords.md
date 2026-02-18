@@ -25,23 +25,44 @@ Rules for Writing Identifiers:
    Rajesh_3 = "ball"
    print(Rajesh_3)
    ball
-
-   1dit = "bat"
+```python
+     1dit = "bat"
      Cell In[21], line 1
-    1dit = "bat"    
-SyntaxError: invalid decimal literal
-
-
-    async = "wicket"
-        Cell In[23], line 1
-    async = "wicket"
-          
-SyntaxError: invalid syntax
+    1dit = "bat"
+SyntaxError: invalid decimal literal    
 ```
-
-
-
-
+  ```python
+      async = "wicket"
+        Cell In[23], line 1
+    async = "wicket"          
+SyntaxError: invalid syntax  
+````
+# Single Line comment  
+```python
+# this python practise
+```
+# Multi-line Comments (using #)
+When comments need to span several lines, you can put it at the start of each line. This keeps each line clearly a comment.
+```python
+#The following three lines are regulor single-Line comments
+#They share ignored when the progras
+#the single-tine caveents to lai mult details in stels  
+```
+# Multi-line Comments (single and triple quotes)
+single quotes (') are used to define string literals. They are functionally identical to double quotes (")   
+triple-quotes strings can span multiple lines and are often used for socstrings, they can also serve as long comments when placed where code execution will ignore them  
+Trinle quoted strings can multiple lines   
+They are often used for socstringe (documentation) or tong coments.  
+```python
+'this python practise'
+ 'this python practise'  
+ 
+''' this python roadmap
+ for ML jourey
+ thans for watchin'''    
+ 
+'this python roadmap\n for ML jourey\n thans for watchin'
+```
 ## Variables ##
 
 This notebook explains basic Python data concepts. Read each short note, then run the code cells to see examples
