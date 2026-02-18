@@ -25,22 +25,27 @@ Rules for Writing Identifiers:
    Rajesh_3 = "ball"
    print(Rajesh_3)
    ball
+   ```
+   ---
 ```python
      1dit = "bat"
      Cell In[21], line 1
     1dit = "bat"
 SyntaxError: invalid decimal literal    
 ```
+---
   ```python
       async = "wicket"
         Cell In[23], line 1
     async = "wicket"          
 SyntaxError: invalid syntax  
 ````
+---
 # Single Line comment  
 ```python
 # this python practise
 ```
+---  
 # Multi-line Comments (using #)
 When comments need to span several lines, you can put it at the start of each line. This keeps each line clearly a comment.
 ```python
@@ -48,11 +53,13 @@ When comments need to span several lines, you can put it at the start of each li
 #They share ignored when the progras
 #the single-tine caveents to lai mult details in stels  
 ```
-# Multi-line Comments (single and triple quotes)
+---
+# Multi-line Comments (single and triple quotes) #
 single quotes (') are used to define string literals. They are functionally identical to double quotes (")   
 triple-quotes strings can span multiple lines and are often used for socstrings, they can also serve as long comments when placed where code execution will ignore them  
 Trinle quoted strings can multiple lines   
-They are often used for socstringe (documentation) or tong coments.  
+They are often used for socstringe (documentation) or tong coments.
+---
 ```python
 'this python practise'
  'this python practise'  
@@ -63,30 +70,33 @@ They are often used for socstringe (documentation) or tong coments.
  
 'this python roadmap\n for ML jourey\n thans for watchin'
 ```
+---
 # Doc strings (module/function/class documentation) 
 * documentation strings are string literals that appear as the first statement in a module, function, class, or method definition. Unlike regular comments, docstrings are stored as metadata and can be accessed at runtime
 * The __doc__ attribute is a special attribute in Python that stores the documentation string (docstring) for a function, class, or module
 ```python
 def add_numbers(a,b):
   ''' the recolate the 
-   work loaction.
-  '''
+   work loaction.'''
   return a + b
 print(add_numbers(5, 4))
 print(add_numbers.__doc__)
 9
 the recolate the 
 work loaction.
-
+```
+---
+```python
 def doc_string_example():
     '''
     this is the doc string of a funtction name doc_string_example
     '''
     return 'hello'
 print(doc_string_example.__doc__)
-
 this is the doc string of a funtction name doc_string_example
-
+```
+---
+```python
 def no_doc_string():
     return 'return stat'
 print(no_doc_string.__doc__)
