@@ -136,3 +136,59 @@ print(c)
 7
 ```
 ---
+```python
+a,b,c = 2,4.5,'raj'
+print(a)
+print(b)
+print(c)
+2
+4.5
+raj
+```
+---
+```python
+a = 10
+b = 5.5
+c = "ML"
+d = (a +7j)
+print ('a =', a, ' | type =',type(a)) 
+print ('b =', b, ' | type = ',type(b))
+print ( 'c =', c, ' |type = ',type(c))
+print ( 'c =', d, ' |type = ',type(d))
+
+a = 10  | type = <class 'int'>
+b = 5.5  | type =  <class 'float'>
+c = ML  |type =  <class 'str'>
+c = (10+7j)  |type =  <class 'complex'>
+```
+---
+# variable conversion
+* floating to string
+```python
+d = str(5.5)
+print ( 'd= ', d, '| type= ', type(d))
+d=  5.5 | type=  <class 'str'>
+```
+---
+* int to string
+```python
+e = str(6)
+print ( 'e= ', e, '| type= ', type(e))
+e=  6 | type=  <class 'str'>
+```
+---
+* complex to str
+```python
+g = str(6 +2j)
+print ( 'g= ', g, '| type= ', type(g))
+g=  (6+2j) | type=  <class 'str'>
+```
+---
+* float to intger
+```python
+f = int(6.5)
+print ( 'f= ', f, '| type= ', type(f))
+f=  6 | type=  <class 'int'>
+```
+---
+* ingert to string and float to string and complex number to string not possible 
