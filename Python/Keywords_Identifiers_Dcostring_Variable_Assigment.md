@@ -162,7 +162,7 @@ c = ML  |type =  <class 'str'>
 c = (10+7j)  |type =  <class 'complex'>
 ```
 ---
-# variable conversion
+# Type casting (variable conversion)
 * floating to string
 ```python
 d = str(5.5)
