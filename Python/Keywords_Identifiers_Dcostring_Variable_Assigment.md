@@ -191,4 +191,6 @@ print ( 'f= ', f, '| type= ', type(f))
 f=  6 | type=  <class 'int'>
 ```
 ---
-* ingert to string and float to string and complex number to string not possible 
+* ingert to string and float to string and complex number to string not possible
+
+  [ DAY-2 Class-Link](https://meeting.zoho.in/meeting/public/videoprv?recordingId=07519ac3fef60cd65972c9e3a9a207f8b2a4262aa05441b240e86fb65a09a062&x-meeting-org=60064714209)
