@@ -59,11 +59,10 @@ P value = 3
 ####            P < Sigma value reject null hypothesis
 ####            P > sigma value accepts null hypothesis
 
-                           In this case 3 < 5   
+In this example 3 < 5   
 
-                           Reject the null hypotheses  
-
-                           Accepted the alternative hypotheses    
+**H0  = Rejected**   
+**H1  = Accepted**    
 
 
 **Example3**
