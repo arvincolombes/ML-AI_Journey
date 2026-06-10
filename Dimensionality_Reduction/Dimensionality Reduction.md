@@ -10,7 +10,7 @@ Bivariate analysis is the simultaneous analysis of two variables. It explores th
 Example: periplot 
 
 
-**Vector : By default someone says vector it is by default it column vector**       
+**Vector : By default vector is a column vector**       
 **Column vector x  row vector xT ** 
 
 ### Data representation:
